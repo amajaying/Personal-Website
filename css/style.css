@@ -28,6 +28,7 @@
   margin: 0;
   outline: none;
   font-family: 'Product Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   scroll-behavior: smooth;
 }
 ::before,
