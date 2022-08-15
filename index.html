@@ -1,508 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amajaying Portfolio</title>
-    <link rel="stylesheet" href="css/font-awesome.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Main Start -->
-    <div class="main">
-      <!-- Home Section Start -->
-      <section class="home-section align-items-center">
-        <nav>
-          <div class="logo">
-            <img src="img/logo.png" alt="amajaying" />
-          </div>
-          <div class="menu">
-            <a href="#">Home</a>
-            <a href="#profile">Profile</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact Me</a>
-          </div>
-        </nav>
 
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="home-text">
-              <p class="p1">Hello, I'm</p>
-              <h1>Ajay Khatri</h1>
-              <p class="p2">Designer & Developer</p>
-              <div class="buttons">
-                <button class="btn"><a href="#">Download Resume</a></button>
-                <button class="btn"><a href="#">Know More</a></button>
-              </div>
-            </div>
-            <div class="home-img">
-              <div class="img-box">
-                <img src="img/profile-img.png" alt="profile-img" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="socials">
-          <div class="social">
-            <a href="#"
-              ><img src="img/icons/linkedin.svg" alt="linkedin" height="30px"
-            /></a>
-            <a href="#"
-              ><img src="img/icons/insta.svg" alt="instagram" height="30px"
-            /></a>
-            <a href="#"
-              ><img src="img/icons/github.svg" alt="github" height="30px"
-            /></a>
-            <a href="#"
-              ><img src="img/icons/twitter.svg" alt="twitter" height="30px"
-            /></a>
-          </div>
-          <div class="copyright">Copyright 2022 - amajaying</div>
-        </div>
-      </section>
-      <a name="profile"></a>
-      <!-- Profile Start -->
-      <section class="about-section sec-padding hidden">
-        <div class="container">
-          <div class="row">
-            <div class="section-title">
-              <h2>profile</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="about-img">
-              <div class="img-box">
-                <img src="img/about-img.png" alt="about img" />
-              </div>
-            </div>
-            <div class="about-text">
-              <p>
-                I'm a junior undergrad -
-                <b
-                  >Sophomore at KIIT, majoring in Computer Science and
-                  Engineering.</b
-                ><br />
-                I'm a <b>Designer & Developer</b>. My expertise lies in web
-                development, app development, UI/UX, product design &
-                problem-solving. I have taken courses in the field of my area of
-                interests and working on some related projects.<br />
-                I am constantly looking for opportunities and collaborative
-                work.
-                <b
-                  >If you have an exciting idea in mind, please feel free to
-                  reach out to me for a chat!</b
-                ><br />
-                <b>When I’m not in front of a computer screen</b>, I’m probably
-                sleeping or eating ;)
-              </p>
-              <h2>skills</h2>
-              <div class="skills">
-                <div class="skill-item">html</div>
-                <div class="skill-item">css</div>
-                <div class="skill-item">javaScript</div>
-                <div class="skill-item">bootstrap</div>
-                <div class="skill-item">python</div>
-                <div class="skill-item">C/C++</div>
-                <div class="skill-item">Kotlin</div>
-                <div class="skill-item">Firebase</div>
-                <div class="skill-item">Flutter</div>
-                <div class="skill-item">Dart</div>
-                <div class="skill-item">Figma</div>
-                <div class="skill-item">Photoshop</div>
-                <div class="skill-item">Illustrator</div>
-              </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Amjaying</title>
+</head>
 
-              <div class="about-tabs">
-                <button
-                  type="button"
-                  class="tab-item active"
-                  data-target="#education"
-                >
-                  education
+<body>
+    <header class="primary-header">
+        <div class="container flex justify-between  mx-auto">
+            <a href="#" class="item-center flex"><img src="img/header-logo.png" alt="Amajaying"></a>
+            <nav class="primary-navigation flex">
+                <ul role="list" class="flex navbar item-center">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class="flex item-center">
+                <button class="button-outline resume bold item-center">My Resume</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <!-- <img src="img/cloud-left.png" alt="cloud" class="cloud right"> -->
+            <!-- <img src="img/cloud-right.png" alt="cloud" class="cloud"> -->
+            <div class="container item-center flex justify-center hero">
+                <h2 class="fs-60 bold">Hi, I’m <span class="light-gray-text">Ajay</span>,</h2>
+                <h1 class="fs-80 bold red-text line-height-100">Designer & Developer.</h1>
+                <p class="fs-30"><span class="light-gray-text">A </span> designer <span class="light-gray-text">trying to design his way into </span>programming!</p>
+                <ul role="list" class="socials flex margin-top-2rem">
+                    <li>
+                        <a href="#"><i class="margin-lr fa-brands fa-2x fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="margin-lr fa-brands fa-2x fa-square-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="margin-lr fa-brands fa-2x fa-square-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="margin-lr fa-brands fa-2x fa-square-twitter"></i></a>
+                    </li>
+                </ul>
+                <button class="button bold margin-top-1rem">
+                    <span>
+                    Explore My Works
+                    </span>
                 </button>
-                <button
-                  type="button"
-                  class="tab-item"
-                  data-target="#experience"
-                >
-                  experience
-                </button>
-              </div>
-              <!-- Education Start -->
-              <div class="tab-content active" id="education">
-                <div class="timeline">
-                  <div class="timeline-item">
-                    <span class="date">2021 - 2025</span>
-                    <h4>
-                      Bachelor of Technology -
-                      <span>Computer Science and Engineering</span>
-                    </h4>
-                    <p>KIIT University</p>
-                  </div>
-                  <div class="timeline-item">
-                    <span class="date">2018 - 2020</span>
-                    <h4>+2 High School - <span>Science</span></h4>
-                    <p>New Horizon Institute</p>
-                  </div>
-                  <div class="timeline-item">
-                    <span class="date">2006 - 2018</span>
-                    <h4>SEE</h4>
-                    <p>New Horizon English Boarding Secondary School</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Education End -->
-
-              <!-- Experience Start -->
-              <div class="tab-content" id="experience">
-                <div class="timeline">
-                  <div class="timeline-item">
-                    <span class="date">2013 - 2016</span>
-                    <h4>
-                      UI/UX Designer - <span>Enspire Tech Pvt. Ltd.</span>
-                    </h4>
-                    <p>
-                      <li>
-                        Designed awesome App and Website Interface for different
-                        startups.
-                      </li>
-                      <li>
-                        Did user research based on requirement of the company.
-                      </li>
-                      <li>
-                        Wrote some valid looking point to not keep this space
-                        empty.
-                      </li>
-                    </p>
-                  </div>
-                  <div class="timeline-item">
-                    <span class="date">2013 - 2016</span>
-                    <h4>
-                      UI/UX Designer - <span>Enspire Tech Pvt. Ltd.</span>
-                    </h4>
-                    <p>
-                      <li>
-                        Designed awesome App and Website Interface for different
-                        startups.
-                      </li>
-                      <li>
-                        Did user research based on requirement of the company.
-                      </li>
-                      <li>
-                        Wrote some valid looking point to not keep this space
-                        empty.
-                      </li>
-                    </p>
-                  </div>
-                  <div class="timeline-item">
-                    <span class="date">2013 - 2016</span>
-                    <h4>
-                      UI/UX Designer - <span>Enspire Tech Pvt. Ltd.</span>
-                    </h4>
-                    <p>
-                      <li>
-                        Designed awesome App and Website Interface for different
-                        startups.
-                      </li>
-                      <li>
-                        Did user research based on requirement of the company.
-                      </li>
-                      <li>
-                        Wrote some valid looking point to not keep this space
-                        empty.
-                      </li>
-                    </p>
-                  </div>
-                  <div class="timeline-item">
-                    <span class="date">2013 - 2016</span>
-                    <h4>
-                      UI/UX Designer - <span>Enspire Tech Pvt. Ltd.</span>
-                    </h4>
-                    <p>
-                      <li>
-                        Designed awesome App and Website Interface for different
-                        startups.
-                      </li>
-                      <li>
-                        Did user research based on requirement of the company.
-                      </li>
-                      <li>
-                        Wrote some valid looking point to not keep this space
-                        empty.
-                      </li>
-                    </p>
-                  </div>
-                  <div class="timeline-item">
-                    <span class="date">2013 - 2016</span>
-                    <h4>
-                      UI/UX Designer - <span>Enspire Tech Pvt. Ltd.</span>
-                    </h4>
-                    <p>
-                      <li>
-                        Designed awesome App and Website Interface for different
-                        startups.
-                      </li>
-                      <li>
-                        Did user research based on requirement of the company.
-                      </li>
-                      <li>
-                        Wrote some valid looking point to not keep this space
-                        empty.
-                      </li>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- Experience End -->
-              <div class="buttons small">
-                <button class="btn"><a href="#">Download Resume</a></button>
-                <button class="btn"><a href="#">Contact Me</a></button>
-              </div>
             </div>
-          </div>
+        </section>
+        <section>
+            <div class="red-bg backred absolute"></div>
+            <div class="container margin-top-6rem">
+
+                <h2 class="fs-30 text-white">MY PROJECTS</h2>
+                <div class="even-columns-two ">
+                    <div>
+                        <h2 class="sub-head fs-50 text-white">Design Projects</h2>
+                    </div>
+                    <div>
+                        <button class="button button1 button-outline-white bold"><span>View All</span></button>
+                    </div>
+                </div>
+
+                <div class="even-columns projects">
+                    <div class="project-box">
+                        <img src="img/thumbnail.png" alt="thumbnail">
+                        <h1 class="fs-24 margin-top-1rem">Freshway App Design</h1>
+                        <p class="fs-14">Freshway is a grocery mega mart in Nepal. This app was designed to make the purchasing and listing efficient and productive to the user and the seleer too.</p>
+                    </div>
+
+                    <div class="project-box">
+                        <img src="img/thumbnail.png" alt="thumbnail">
+                        <h1 class="fs-24 margin-top-1rem">Freshway App Design</h1>
+                        <p class="fs-14">Freshway is a grocery mega mart in Nepal. This app was designed to make the purchasing and listing efficient and productive to the user and the seleer too.</p>
+                    </div>
+
+                    <div class="project-box">
+                        <img src="img/thumbnail.png" alt="thumbnail">
+                        <h1 class="fs-24 margin-top-1rem">Freshway App Design</h1>
+                        <p class="fs-14">Freshway is a grocery mega mart in Nepal. This app was designed to make the purchasing and listing efficient and productive to the user and the seleer too.</p>
+                    </div>
+
+                    <div class="project-box">
+                        <img src="img/thumbnail.png" alt="thumbnail">
+                        <h1 class="fs-24 margin-top-1rem">Freshway App Design</h1>
+                        <p class="fs-14">Freshway is a grocery mega mart in Nepal. This app was designed to make the purchasing and listing efficient and productive to the user and the seleer too.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+
+            <div class="container">
+                <div class="even-columns-two">
+                    <div>
+                        <h2 class="fs-50 sub-head">Development Projects</h2>
+                    </div>
+                    <div>
+                        <button class="button2 button button-outline bold"><span>View All</span></button>
+                    </div>
+                </div>
+                <div class="even-columns projects">
+                    <div class="project-box">
+                        <img src="img/thumbnail.png" alt="thumbnail">
+                        <h1 class="fs-24 text-white margin-top-1rem">Freshway App Design</h1>
+                        <p class="fs-14 text-white">Freshway is a grocery mega mart in Nepal. This app was designed to make the purchasing and listing efficient and productive to the user and the seleer too.</p>
+                    </div>
+
+                    <div class="project-box">
+                        <img src="img/thumbnail.png" alt="thumbnail">
+                        <h1 class="fs-24 text-white margin-top-1rem">Freshway App Design</h1>
+                        <p class="fs-14 text-white">Freshway is a grocery mega mart in Nepal. This app was designed to make the purchasing and listing efficient and productive to the user and the seleer too.</p>
+                    </div>
+
+                    <div class="project-box">
+                        <img src="img/thumbnail.png" alt="thumbnail">
+                        <h1 class="fs-24 text-white margin-top-1rem">Freshway App Design</h1>
+                        <p class="fs-14 text-white">Freshway is a grocery mega mart in Nepal. This app was designed to make the purchasing and listing efficient and productive to the user and the seleer too.</p>
+                    </div>
+
+                    <div class="project-box">
+                        <img src="img/thumbnail.png" alt="thumbnail">
+                        <h1 class="fs-24 text-white margin-top-1rem">Freshway App Design</h1>
+                        <p class="fs-14 text-white">Freshway is a grocery mega mart in Nepal. This app was designed to make the purchasing and listing efficient and productive to the user and the seleer too.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="red-bg backred-down absolute "></div>
+        </section>
+
+        <section>
+            <div class="container margin-top-4rem">
+                <h1 class="fs-60">
+                    Except Design & Development,
+                </h1>
+                <img class="line-up" src="img/line.png" alt="line">
+                <div class="even-columns-three">
+                    <div class="except-box">
+                        <div class="thumbnail red-bg overlay">
+                            <img src="img/blog.png" alt="blog">
+                        </div>
+                        <div class="text">
+                            <p class="fs-30 margin-top-2rem">I write <span class="red-text">blogs</span>.<br>Check out my latest blog!</p>
+                        </div>
+                    </div>
+
+                    <div class="except-box">
+                        <div class="red-bg thumbnail overlay">
+                            <img src=" img/youtube.png " alt="youtube ">
+                        </div>
+                        <div class="text ">
+                            <p class="fs-30 margin-top-2rem">I make <span class="red-text">youtube</span> videos.<br>Check out my latest video!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container contact-now margin-top-4rem">
+                <img class="curved-line" src="img/curved-line.png" alt="curved-line">
+                <div class="even-columns-four">
+                    <div class="left ">
+                        <h1 class="fs-60 bold line-height-100">Let’s work on a <span class="red-text">project together!?</span></h1>
+                        <h3 class="fs-24 margin-top-2rem line-height-100">I’m excited to work with you. Are you?<br>If yes, let’s connect!</h3>
+                    </div>
+                    <div class="right flex">
+                        <button class="bold contact-button button button2 button-outline"><span>Contact Now</span></button>
+                        <ul role="list " class="socials flex margin-top-2rem">
+                            <li>
+                                <a href="# "><i class="fa-brands margin-lr1 fa-2x fa-linkedin "></i></a>
+                            </li>
+                            <li>
+                                <a href="# "><i class="fa-brands margin-lr1 fa-2x fa-square-github "></i></a>
+                            </li>
+                            <li>
+                                <a href="# "><i class="fa-brands margin-lr1 fa-2x fa-square-instagram "></i></a>
+                            </li>
+                            <li>
+                                <a href="# "><i class="fa-brands margin-lr1 fa-2x fa-square-twitter "></i></a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="red-bg backred absolute footer"></div>
+        <div class="container ">
+            <div class="even-columns-five margin-top-4rem flex justify-between">
+
+                <p class="fs-16 width-20 text-white margin-lr1 email">amajaying@gmail.com</p>
+
+                <div>
+                    <ul role="list " class="nav-list footer-nav flex">
+                        <li><a href="# " class="text-white margin-lr1">Home</a></li>
+                        <li><a href="# " class="text-white margin-lr1">About</a></li>
+                        <li><a href="# " class="text-white margin-lr1">Portfolio</a></li>
+                        <li><a href="# " class="text-white margin-lr1">Contact Me</a></li>
+                    </ul>
+                </div>
+
+                <p class="fs-16 width-80 flex madewith text-white">Made with ❤️ by amajaying!</p>
+
+            </div>
         </div>
-      </section>
-      <!-- Profile End -->
+    </footer>
+</body>
 
-      <!-- Portfolio Section Start -->
-      <section class="portfolio-section sec-padding hidden">
-        <div class="container">
-          <div class="row">
-            <div class="section-title">
-              <h2>recent works</h2>
-            </div>
-          </div>
-          <div class="row">
-            <!-- Portfolio Item Start -->
-            <div class="portfolio-item">
-              <div class="portfolio-item-thumbnail">
-                <img src="img/portfolio/1.png" alt="thumbnail-1" />
-              </div>
-              <h2 class="portfolio-item-title">grocery app design</h2>
-              <button type="button" class="btn view-project-btn">
-                <a href="#">View Project</a>
-              </button>
-              <div class="portfolio-item-details">
-                <div class="description">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Soluta laudantium atque asperiores officia, placeat beatae
-                    voluptatem velit aspernatur, at error, voluptatum commodi
-                    molestias! Deserunt cumque, iusto beatae delectus, voluptate
-                    rem ipsam voluptates nam officia laudantium consequuntur,
-                    quam rerum voluptas sapiente.
-                  </p>
-                </div>
-                <div class="general-info">
-                  <ul>
-                    <li>Created - <span>4 Dec 2020</span></li>
-                    <li>Technology used - <span>Figma</span></li>
-                    <li>Role - <span>UI/UX Designer</span></li>
-                  </ul>
-                  <button type="button" class="btn">
-                    <a href="#">See Live</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item Start -->
-            <div class="portfolio-item">
-              <div class="portfolio-item-thumbnail">
-                <img src="img/portfolio/1.png" alt="thumbnail-1" />
-              </div>
-              <h2 class="portfolio-item-title">grocery app design</h2>
-              <button type="button" class="btn view-project-btn">
-                <a href="#">View Project</a>
-              </button>
-              <div class="portfolio-item-details">
-                <div class="description">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Soluta laudantium atque asperiores officia, placeat beatae
-                    voluptatem velit aspernatur, at error, voluptatum commodi
-                    molestias! Deserunt cumque, iusto beatae delectus, voluptate
-                    rem ipsam voluptates nam officia laudantium consequuntur,
-                    quam rerum voluptas sapiente.
-                  </p>
-                </div>
-                <div class="general-info">
-                  <ul>
-                    <li>Created - <span>4 Dec 2020</span></li>
-                    <li>Technology used - <span>Figma</span></li>
-                    <li>Role - <span>UI/UX Designer</span></li>
-                  </ul>
-                  <button type="button" class="btn">
-                    <a href="#">See Live</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item Start -->
-            <div class="portfolio-item">
-              <div class="portfolio-item-thumbnail">
-                <img src="img/portfolio/1.png" alt="thumbnail-1" />
-              </div>
-              <h2 class="portfolio-item-title">grocery app design</h2>
-              <button type="button" class="btn view-project-btn">
-                <a href="#">View Project</a>
-              </button>
-              <div class="portfolio-item-details">
-                <div class="description">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Soluta laudantium atque asperiores officia, placeat beatae
-                    voluptatem velit aspernatur, at error, voluptatum commodi
-                    molestias! Deserunt cumque, iusto beatae delectus, voluptate
-                    rem ipsam voluptates nam officia laudantium consequuntur,
-                    quam rerum voluptas sapiente.
-                  </p>
-                </div>
-                <div class="general-info">
-                  <ul>
-                    <li>Created - <span>4 Dec 2020</span></li>
-                    <li>Technology used - <span>Figma</span></li>
-                    <li>Role - <span>UI/UX Designer</span></li>
-                  </ul>
-                  <button type="button" class="btn">
-                    <a href="#">See Live</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item Start -->
-            <div class="portfolio-item">
-              <div class="portfolio-item-thumbnail">
-                <img src="img/portfolio/1.png" alt="thumbnail-1" />
-              </div>
-              <h2 class="portfolio-item-title">grocery app design</h2>
-              <button type="button" class="btn view-project-btn">
-                <a href="#">View Project</a>
-              </button>
-              <div class="portfolio-item-details">
-                <div class="description">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Soluta laudantium atque asperiores officia, placeat beatae
-                    voluptatem velit aspernatur, at error, voluptatum commodi
-                    molestias! Deserunt cumque, iusto beatae delectus, voluptate
-                    rem ipsam voluptates nam officia laudantium consequuntur,
-                    quam rerum voluptas sapiente.
-                  </p>
-                </div>
-                <div class="general-info">
-                  <ul>
-                    <li>Created - <span>4 Dec 2020</span></li>
-                    <li>Technology used - <span>Figma</span></li>
-                    <li>Role - <span>UI/UX Designer</span></li>
-                  </ul>
-                  <button type="button" class="btn">
-                    <a href="#">See Live</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item Start -->
-            <div class="portfolio-item">
-              <div class="portfolio-item-thumbnail">
-                <img src="img/portfolio/1.png" alt="thumbnail-1" />
-              </div>
-              <h2 class="portfolio-item-title">grocery app design</h2>
-              <button type="button" class="btn view-project-btn">
-                <a href="#">View Project</a>
-              </button>
-              <div class="portfolio-item-details">
-                <div class="description">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Soluta laudantium atque asperiores officia, placeat beatae
-                    voluptatem velit aspernatur, at error, voluptatum commodi
-                    molestias! Deserunt cumque, iusto beatae delectus, voluptate
-                    rem ipsam voluptates nam officia laudantium consequuntur,
-                    quam rerum voluptas sapiente.
-                  </p>
-                </div>
-                <div class="general-info">
-                  <ul>
-                    <li>Created - <span>4 Dec 2020</span></li>
-                    <li>Technology used - <span>Figma</span></li>
-                    <li>Role - <span>UI/UX Designer</span></li>
-                  </ul>
-                  <button type="button" class="btn">
-                    <a href="#">See Live</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item Start -->
-            <div class="portfolio-item">
-              <div class="portfolio-item-thumbnail">
-                <img src="img/portfolio/1.png" alt="thumbnail-1" />
-              </div>
-              <h2 class="portfolio-item-title">grocery app design</h2>
-              <button type="button" class="btn view-project-btn">
-                <a href="#">View Project</a>
-              </button>
-              <div class="portfolio-item-details">
-                <div class="description">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Soluta laudantium atque asperiores officia, placeat beatae
-                    voluptatem velit aspernatur, at error, voluptatum commodi
-                    molestias! Deserunt cumque, iusto beatae delectus, voluptate
-                    rem ipsam voluptates nam officia laudantium consequuntur,
-                    quam rerum voluptas sapiente.
-                  </p>
-                </div>
-                <div class="general-info">
-                  <ul>
-                    <li>Created - <span>4 Dec 2020</span></li>
-                    <li>Technology used - <span>Figma</span></li>
-                    <li>Role - <span>UI/UX Designer</span></li>
-                  </ul>
-                  <button type="button" class="btn">
-                    <a href="#">See Live</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-          </div>
-        </div>
-      </section>
-      <!-- Portfolio Section End -->
-    </div>
-    <!-- Main End -->
-
-    <!-- Portfolio Item Details Popup Start -->
-    <div class="portfolio-popup hidden">
-      <div class="pp-inner">
-        <div class="pp-content">
-          <div class="pp-header">
-            <button type="button" class="btn pp-close">
-              <a href="#"><i class="fas fa-times"></i></a>
-            </button>
-            58:20
-            <div class="pp-thumbnail">
-              <img src="img/portfolio/1.png" alt="pp-thumbnail" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Portfolio Item Details Popup End -->
-
-    <script src="js/script.js"></script>
-  </body>
 </html>
